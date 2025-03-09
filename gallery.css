@@ -1,0 +1,90 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	perspective: 1080px;
+    transition: all .5s;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%,
+     rgba(0,0,0,1) 30%, rgb(0, 0, 255) 70%);
+}
+body:hover{
+	perspective: 2500px;
+}
+.wrapper{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	transition: all 10s;
+	transform: rotateZ(0) rotateX(0) rotateY(0);
+	transform-style: preserve-3d;
+}
+
+.wrapper:hover{
+	transform: rotateZ(180deg) rotateX(90deg) rotateY(360deg);
+}
+.face{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 5s;
+	opacity: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 25px;
+}
+.face:nth-child(1){
+    background-image: url(obanai-obanai-iguro.gif);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center left;
+	transform: rotateY(90deg) translateX(-150px);
+}
+.face:nth-child(2){
+    background-image: url(78203ab7774ccb7186723f61db354564d2944930r1-500-231_hq.gif);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center right;
+	transform: rotateY(-90deg) translateX(150px);
+}
+.face:nth-child(3){
+    background-image: url(giyu-giyu.gif);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center top;
+	transform: rotateX(-90deg) translateY(-150px)
+	
+}
+.face:nth-child(4){
+    background-image: url(tumblr_271758914f703728712194c67ea97d0d_6e7ef707_1280.webp);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center bottom;
+	transform: rotateX(90deg) translateY(150px);
+}
+.face:nth-child(5){
+    background-image: url(mitsuri-mitsuri-mitsuri.gif);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center bottom;
+	transform: translateZ(-150px);
+}
+.face:nth-child(6){
+    background-image: url(tokito.gif);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center bottom;
+	transform: translateZ(150px);
+}
+

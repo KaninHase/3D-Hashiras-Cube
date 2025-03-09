@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/> 
+<link rel="stylesheet" href="gallery.css">
+<title>3D Cube Box Hashiras Animation</title>
+</head>
+<body onclick="PlayAudio()" onload="myFunction()">
+  <audio id="musica1" hidden loop>  
+    <source src="Red-Hot-Chili-Peppers-Can_t-Stop.ogg" type="audio/ogg">
+    </audio>
+    <div class="wrapper">
+        <div class="face" title="Obanai Iguro"></div>
+        <div class="face" title="Shinobu Kocho"></div>
+        <div class="face" title="Giyu Tomioka"></div>
+        <div class="face" title="Kyojuro Rengoku"></div>
+        <div class="face" title="Mitsuri Kanroji"></div>
+        <div class="face" title="Muichiro Tokitou"></div>
+      </div>
+
+</body>
+<script type="text/javascript">
+  // Player by clicking
+      function PlayAudio(){
+          document.getElementById('musica1').play();
+      }
+  
+      window.onload = function(){
+          document.getElementById('musica1').play();
+      }
+  
+      var myVar;
+</script>
+</html>
+
